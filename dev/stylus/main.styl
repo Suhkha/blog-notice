@@ -1,0 +1,94 @@
+body
+	background-color #DCE2EC
+/*General*/	
+.card__main
+	&--front
+	&--content
+	&--comments
+		bottom 0
+		position relative
+		height 90vh
+		
+.card__main--front
+	background-image url('../images/travel.jpg')
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+	text-transform uppercase
+
+.card__info
+	color white
+	font-weight bold
+	position absolute
+	padding 0 35px 0 35px 
+	bottom 50px
+
+.card__main
+	&--content
+	&--comments
+		overflow:auto;
+		background-color #F8F9FA
+		padding 40px 35px
+		p
+			line-height 30px
+			font-family Century Gothic
+			font-size 16px
+			margin-bottom 50px
+
+.card__main--comments
+	&--author
+		font-weight bold
+		font-size 12px
+	&--date
+		color #E3E4E4
+
+.image__author
+	margin-bottom 30px
+			
+.card__comment
+	font-size 14px
+	
+.card
+	&__link
+	&__link:hover
+		display inline-block
+		background-color white
+		padding 8px
+		color black
+		font-size 12px
+		text-decoration none
+
+.card__footer
+	background white
+	position absolute
+	padding 30px
+	bottom 0px
+	width 100vw
+	height 10%
+	&--controls:hover
+	&--controls:before
+		font-family FontAwesome	
+		font-weight bold
+		color black
+		text-decoration none
+		display inline
+		content '\f10c'
+	&--link-comments:before
+		font-family FontAwesome
+		font-weight bold
+		color black
+		text-decoration none	
+		content '\f0e5'
+		float right
+		font-size 20px
+	.active:before
+		content '\f111'
+	&--link-home
+	&--link-home:hover
+		color black
+		text-decoration none
+		font-size 14px
+		cursor pointer
+		font-weight bold
+			
+@import "_media.styl"

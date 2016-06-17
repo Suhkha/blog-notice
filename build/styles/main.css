@@ -1,0 +1,112 @@
+body {
+  background-color: #dce2ec;
+}
+/*General*/
+.card__main--front,
+.card__main--content,
+.card__main--comments {
+  bottom: 0;
+  position: relative;
+  height: 90vh;
+}
+.card__main--front {
+  background-image: url("../images/travel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-transform: uppercase;
+}
+.card__info {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  padding: 0 35px 0 35px;
+  bottom: 50px;
+}
+.card__main--content,
+.card__main--comments {
+  overflow: auto;
+  background-color: #f8f9fa;
+  padding: 40px 35px;
+}
+.card__main--content p,
+.card__main--comments p {
+  line-height: 30px;
+  font-family: Century Gothic;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.card__main--comments--author {
+  font-weight: bold;
+  font-size: 12px;
+}
+.card__main--comments--date {
+  color: #e3e4e4;
+}
+.image__author {
+  margin-bottom: 30px;
+}
+.card__comment {
+  font-size: 14px;
+}
+.card__link,
+.card__link:hover {
+  display: inline-block;
+  background-color: #fff;
+  padding: 8px;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+.card__footer {
+  background: #fff;
+  position: absolute;
+  padding: 30px;
+  bottom: 0px;
+  width: 100vw;
+  height: 10%;
+}
+.card__footer--controls:hover,
+.card__footer--controls:before {
+  font-family: FontAwesome;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  display: inline;
+  content: '\f10c';
+}
+.card__footer--link-comments:before {
+  font-family: FontAwesome;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  content: '\f0e5';
+  float: right;
+  font-size: 20px;
+}
+.card__footer .active:before {
+  content: '\f111';
+}
+.card__footer--link-home,
+.card__footer--link-home:hover {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .card__title {
+    font-size: 56px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card__title {
+    font-size: 72px;
+  }
+}
+@media (min-width: 568px) and (max-width: 639px) and (orientation: landscape) {
+  .card__title {
+    font-size: 52px;
+  }
+}
